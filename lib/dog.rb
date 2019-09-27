@@ -59,4 +59,8 @@ class Dog
     end.first 
   end 
   
+  def self.find_or_create_by
+    
+  end 
+  
 end 
