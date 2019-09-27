@@ -56,7 +56,7 @@ class Dog
     
     DB[:conn].execute(sql, id).map do |row|
       self.new(id: row[0], name: row[1], breed: row[2])
-    end 
+    end.first 
   end 
   
 end 
